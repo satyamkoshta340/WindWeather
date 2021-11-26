@@ -1,0 +1,24 @@
+.temp{
+    font-size: 5rem;
+}
+.name{
+    font-size: 2rem;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.gif{
+
+    display: flex;
+    flex-direction: row;
+    width:250px;
+    /* justify-items: center; */
+    margin: auto;
+}
+
+.forecast-sun{
+    width: 30px;
+}
