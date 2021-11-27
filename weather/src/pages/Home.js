@@ -3,18 +3,23 @@ import { Link } from 'react-router-dom'
 import sunny from '../media/sunny.gif'
 import "../styles/Home.css";
 export default function Home({inputValue}) {
-    if(inputValue != ""){
+    if(inputValue !== ""){
         return (
             <Link to= "/weather"  >
                 <div>
-                    <img className="gif" src={sunny}></img>
+                    <img className="gif" src={sunny} alt=" "></img>
+                    <div className="home-detail"> 
+                        <p>Welcome To the Wind Weather...</p>
+                        <p>Type the name of City for which you want to check weather, Hit Enter</p>
+                        <p>Now click on the Shiny SUN</p>
+                    </div>
                 </div>
             </Link>
         )
     }
     else return (
         <div>
-            <img className="gif" src={sunny}></img>
+            <img className="gif" src={sunny} alt="WIND"></img>
             <div className="home-detail"> 
                 <p>Welcome To the Wind Weather...</p>
                 <p>Type the name of City for which you want to check weather, Hit Enter</p>

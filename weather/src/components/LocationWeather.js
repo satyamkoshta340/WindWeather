@@ -1,7 +1,7 @@
 import React from 'react'
 import "../styles/LocationWeather.css"
 // import {Cloudy, Sunny, THunderStorm,Clear} from "../media"
-import Cloudy from "../media/cloudy.gif"
+// import Cloudy from "../media/cloudy.gif"
 import Forecast from './Forecast'
 
 export default function LocationWeather({location}) {

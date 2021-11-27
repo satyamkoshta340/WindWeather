@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import React, { useState } from 'react';
 import './styles/main.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -6,12 +6,12 @@ import NavBar from "./components/NavBar.js";
 import Home from "./pages/Home"
 import Location from "./pages/Location"
 import axios from 'axios';
-import { useParams } from 'react-router';
+// import { useParams } from 'react-router';
 // https://api.openweathermap.org/data/2.5/weather?q=London,uk&appid=416566bd01371ea788ab7923c2d01e4c
 const API_BASE_URL= "https://api.openweathermap.org/data/2.5/weather";
 function App() {
   const [inputValue, setInputValue] = useState("");
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [location, setLoaction] = useState(null);
   const search = async (e) =>{
     if(e.code === 'Enter'){
@@ -27,6 +27,7 @@ function App() {
       setIsLoading(false);
     }
   }
+  
   return (
     <div className="main">
       <NavBar search={search}
@@ -41,6 +42,8 @@ function App() {
       </Router>
     </div>
   );
+  
+  
 }
 
 export default App;
