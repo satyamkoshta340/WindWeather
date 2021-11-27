@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import sunny from '../media/sunny.gif'
+import "../styles/Home.css";
 export default function Home({inputValue}) {
     if(inputValue != ""){
         return (
@@ -14,6 +15,11 @@ export default function Home({inputValue}) {
     else return (
         <div>
             <img className="gif" src={sunny}></img>
+            <div className="home-detail"> 
+                <p>Welcome To the Wind Weather...</p>
+                <p>Type the name of City for which you want to check weather, Hit Enter</p>
+                <p>Now click on the Shiny SUN</p>
+             </div>
         </div>
     );
     
