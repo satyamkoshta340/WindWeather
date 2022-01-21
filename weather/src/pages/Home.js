@@ -5,16 +5,19 @@ import "../styles/Home.css";
 export default function Home({inputValue}) {
     if(inputValue !== ""){
         return (
-            <Link to= "/weather"  >
+            <div>
+                <Link to= "/weather"  >
                 <div>
                     <img className="gif" src={sunny} alt=" "></img>
-                    <div className="home-detail"> 
-                        <p>Welcome To the Wind Weather...</p>
-                        <p>Type the name of City for which you want to check weather, Hit Enter</p>
-                        <p>Now click on the Shiny SUN</p>
-                    </div>
                 </div>
-            </Link>
+                </Link>
+                <div className="home-detail"> 
+                    <p>Welcome To the Wind Weather...</p>
+                    <p>Type the name of City for which you want to check weather, Hit Enter</p>
+                    <p>Now click on the Shiny SUN</p>
+                </div>
+            </div>
+            
         )
     }
     else return (

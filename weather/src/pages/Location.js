@@ -7,7 +7,7 @@ export default function Location({locationData}) {
     if(locationData){
         return (
             <div>
-                <LocationWeather location={locationData} />
+                <LocationWeather lat={locationData.coord.lat} lon = {locationData.coord.lon} name ={locationData.name}/>
             </div>
         )
     }
